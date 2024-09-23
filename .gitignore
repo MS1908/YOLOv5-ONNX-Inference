@@ -209,11 +209,6 @@ data/
 *.onnx
 
 # Specific ignores for this project
-foo.py
-inference_log.csv
-confusion_matrix.jpg
-failed_cases_log.csv
-precision_recall_curve.jpg
-tensorboard/
-logs/
-weights/
+test/
+visualize/
+test_log.*

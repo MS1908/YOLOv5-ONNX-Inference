@@ -81,7 +81,7 @@ def non_max_suppression(prediction, conf_thres=0.1, iou_thres=0.6, classes=None,
                 conf.reshape(-1) > conf_thres]
 
         # Filter by class
-        if classes:
+        if classes is not None:
             x = x[(x[:, 5:6] == np.array(classes)).any(axis=1)]
 
         # If none remain process next image

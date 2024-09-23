@@ -39,7 +39,7 @@ class YOLOv5:
     
     def postprocess(self, outputs):
         predictions = outputs[0]
-        predictions = non_max_suppression(predictions, self.conf_thres, self.iou_thres, classes=0, agnostic=True)
+        predictions = non_max_suppression(predictions, self.conf_thres, self.iou_thres, classes=None, agnostic=True)
         
         all_boxes = []
         all_scores = []
