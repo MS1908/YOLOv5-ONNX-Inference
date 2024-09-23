@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import onnxruntime as ort
 
-from nms import non_max_suppression
-from processing import letterbox, scale_coords
+from nms_utils import non_max_suppression
+from process_utils import letterbox, scale_coords
 
 
 class YOLOv5:
